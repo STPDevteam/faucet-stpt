@@ -65,6 +65,7 @@ export default function App() {
               <Web3ReactManager>
                 <Switch>
                   <Route exact strict path={'/'} component={Faucet} />
+                  <Route exact strict path={'/stpt'} component={Faucet} />
                   {/* <Route exact path="/" render={() => <Redirect to={routes.Home} />} /> */}
                 </Switch>
               </Web3ReactManager>
