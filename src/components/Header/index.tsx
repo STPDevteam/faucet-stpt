@@ -8,7 +8,7 @@ import PlainSelect from 'components/Select/PlainSelect'
 import Image from 'components/Image'
 import logo from '../../assets/svg/logo.svg'
 // import { ReactComponent as NotificationIcon } from '../../assets/svg/notification_icon.svg'
-import { routes } from 'constants/routes'
+// import { routes } from 'constants/routes'
 import MobileMenu from './MobileMenu'
 import NetworkSelect from './NetworkSelect'
 
@@ -142,7 +142,7 @@ export default function Header() {
       <Filler />
       <StyledAppBar>
         <Box display="flex" alignItems="center">
-          <MainLogo to={routes.Home}>
+          <MainLogo to={'/'}>
             <Image src={logo} alt={'logo'} />
           </MainLogo>
           <HideOnMobile breakpoint="md">

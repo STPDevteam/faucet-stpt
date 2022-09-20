@@ -112,10 +112,11 @@ export const DAO_FACTORY_ADDRESS: { [chainId in ChainId]?: string } = {
 
 export const STPT_AIRDROP_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.GOERLI]: '0x61f623d4bd01233651bb13f0055a8c09641a9121',
-  [ChainId.MAINNET]: ''
+  [ChainId.MAINNET]: '0xa8Cd6591015546Ef9e422506d7bc8544Ea433916'
 }
 export const STPTToken = new Token(ChainId.MAINNET, '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D', 18, 'STPT', 'STPT')
 
-export const serverBaseUrl = 'https://testapi.myclique.io/'
+// export const serverBaseUrl = 'https://testapi.myclique.io/'
+export const serverBaseUrl = 'https://api.myclique.io/'
 export const serverUploadImage = serverBaseUrl + 'stpdao/v2/img/upload'
 export const signMessage = 'Welcome come Clique'

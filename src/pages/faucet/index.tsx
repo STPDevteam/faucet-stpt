@@ -10,7 +10,7 @@ import { useIsClaimed } from 'hooks/useSTPTAirdrop'
 import { useCallback, useMemo } from 'react'
 import Loading from 'components/Loading'
 import JSBI from 'jsbi'
-import Collapse from 'components/Collapse'
+// import Collapse from 'components/Collapse'
 import useModal from 'hooks/useModal'
 import TransacitonPendingModal from 'components/Modal/TransactionModals/TransactionPendingModal'
 import MessageBox from 'components/Modal/TransactionModals/MessageBox'
@@ -59,7 +59,8 @@ export default function Faucet() {
         <Stack spacing={24} width={460}>
           <Image src={logo} style={{ height: 30 }} />
           <Typography variant="h5" textAlign={'center'}>
-            {accountProof?.amount.toSignificant(6)} STPT AIRDROP!
+            {/* {accountProof?.amount.toSignificant(6)} STPT AIRDROP! */}
+            Claim stpt for Blockzone event
           </Typography>
           {account ? (
             <>
@@ -92,7 +93,7 @@ export default function Faucet() {
           )}
         </Stack>
       </Box>
-      <Box maxWidth={'100%'} pt={50} width="808px" margin={'auto'}>
+      {/* <Box maxWidth={'100%'} pt={50} width="808px" margin={'auto'}>
         <Typography fontWeight={600} fontSize={20} style={{ textAlign: 'left' }}>
           FAQ
         </Typography>
@@ -111,7 +112,7 @@ export default function Faucet() {
             explore more token on most mainstream EVM compatible chains.
           </Collapse>
         </Box>
-      </Box>
+      </Box> */}
     </Container>
   )
 }

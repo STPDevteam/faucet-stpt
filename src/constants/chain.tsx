@@ -31,6 +31,14 @@ export const AllChainList = [
   {
     icon: <ETH />,
     logo: EthUrl,
+    symbol: 'ETH',
+    name: 'ETH Network',
+    id: ChainId.MAINNET,
+    hex: '0x1'
+  },
+  {
+    icon: <ETH />,
+    logo: EthUrl,
     symbol: 'Ropsten',
     name: 'Ropsten Test Network',
     id: ChainId.ROPSTEN,
